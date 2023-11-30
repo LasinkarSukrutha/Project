@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Sofia';  
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+}
+section
+{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100vh; /*View Port Height Same As Percentage But It Is Fixed*/
+background: url('BG.jpg') no-repeat;
+background-size: cover;
+background-position: center;
+animation:animateBg 5s linear infinite;
+}
+@keyframes animateBg /*animateBg Name*/
+{
+100%
+{
+    filter:hue-rotate(360deg);
+}    
+}
+.LoginBox
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background:transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+.LoginBox{
+    font-size: 1em; /*11 px 2em 2(11px)*/
+    color: blue;
+    text-align: center; 
+
+}
+/* . class level selector*/
+.input .icon
+{
+position: absolute;
+right:4px;
+color: #fff;
+font-size: 1.2em;
+line-height: 20px;
+}
